@@ -75,3 +75,16 @@ Configure fail2ban to whitelist your IP address and to send you ban notification
 - ignoreip = 127.0.0.1 [yourIP]
 - action = %(action_mw)
 
+###Configserver### [2](http://configserver.com/free/csf/install.txt)
+
+`$ wget http://www.configserver.com/free/csf.tgz`
+
+`$ tar -xzf csf.tgz`
+
+`$ cd csf`
+
+`$ sh install.sh`
+
+Next, test whether you have the required iptables modules:
+
+`$ perl /usr/local/csf/bin/csftest.pl`
