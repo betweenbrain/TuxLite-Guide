@@ -12,9 +12,20 @@ To get started, you need to SSH into your server a become root by executing `$ s
 
 Then, proceede with following steps from the TuxLite website:
 
-1. `$ mkdir tuxlite`
-2. `$ cd tuxlite`
-3. ` $ wget http://tuxlite.com/scripts/tuxlite.tar.gz`
-4. ` $ tar xzf tuxlite.tar.gz`
-5. ` $ nano options.conf`
+- `$ mkdir tuxlite`
+- `$ cd tuxlite`
+- ` $ wget http://tuxlite.com/scripts/tuxlite.tar.gz`
+- ` $ tar xzf tuxlite.tar.gz`
+- ` $ nano options.conf`
 
+Before proceeding, it is recommended that you fully explore `options.conf`.
+
+Of the available options, I recommend setting:
+
+`CONFIGURE_APT=no` as apt mirrors are not necessarily reliable sources.
+
+`USE_NGINX_ORG_REPO=yes` for faster updates.
+
+Once `options.conf` is configured to your liking.
+
+- `$ chmod 700 *.sh && chmod 700 options.conf`
