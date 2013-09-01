@@ -2,7 +2,7 @@ TuxLite Quick-start Guide
 =============
 [TuxLite](http://tuxlite.com) is a free collection of shell scripts for rapid deployment of LAMP and LNMP stacks (Linux, Apache/Nginx, MySQL and PHP) for Debian and Ubuntu.
 
-This guide will explore it's use and deployment, as well as steps to bring into full production. Portions of this guide are excerpts from the [TuxLite](http://tuxlite.com) website. For a better understanding of the script, it is **highly* * that you visit the [TuxLite](http://tuxlite.com) website before proceeding.
+This guide will explore it's use and deployment, as well as steps to bring into full production. Portions of this guide are excerpts from the [TuxLite](http://tuxlite.com) website. For a better understanding of the script, it is **highly** that you visit the [TuxLite](http://tuxlite.com) website before proceeding.
 
 Base Installation[1](http://tuxlite.com/installation/)
 --------------------------
