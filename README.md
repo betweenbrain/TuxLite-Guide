@@ -10,7 +10,7 @@ The initial installation entails downloading, configuring, and executing the Tux
 
 To get started, you need to SSH into your server a become root by executing `$ sudo su`
 
-Then, proceede with following steps from the TuxLite website:
+Then, proceed with following steps to obtain and configure the script:
 
 - `$ mkdir tuxlite`
 - `$ cd tuxlite`
@@ -33,5 +33,8 @@ Once `options.conf` is configured to your liking.
 To execute the script, execute:
 
 - `$ ./install.sh`
+
+SysAdmin
+-----------------
 
 
