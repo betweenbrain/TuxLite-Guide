@@ -5,7 +5,7 @@ TuxLite Quick-start Guide
 This guide will explore it's use and deployment, as well as steps to bring into full production. Portions of this guide are excerpts from the [TuxLite](http://tuxlite.com) website. For a better understanding of the script, it is **highly* * that you visit the [TuxLite](http://tuxlite.com) website before proceeding.
 
 Base Installation[1](http://tuxlite.com/installation/)
-_________________
+--------------------------
 The initial installation entails downloading, configuring, and executing the TuxLite script.
 
 To get started, you need to SSH into your server a become root by executing `$ sudo su`
@@ -36,5 +36,42 @@ To execute the script, execute:
 
 SysAdmin
 -----------------
+Following the TuxLite tutorial you need to add a user:
 
+`$ adduser johndoe`
+
+However, the script disables root login, so you need to grant at least one user with sudo rights for system administration.
+
+`$  sudo usermod -a -G sudo johndoe`
+
+As this user is the sysadmin, forward all system email, normally sent to `root@localhost` to this user
+
+`$ echo "root: john@doe.com" >> /etc/aliases && newaliases`
+
+Finalizing the base
+----------------------
+Add a domain to the server
+
+`$ ./domain.sh add johndoe yourdomain.com`
+
+Optionally, install  database GUI
+
+`$ ./setup.sh dbgui`
+
+Once again, please consult the [TuxLite installation guide](http://tuxlite.com/installation/)
+
+Server Hardening
+-------------------
+###fail2ban###
+
+`$ aptitude install fail2ban`
+
+Configure fail2ban to whitelist your IP address and to send you ban notification emails:
+
+`$ cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`
+   
+`$ nano /etc/fail2ban/jail.local`
+
+- ignoreip = 127.0.0.1 [yourIP]
+- action = %(action_mw)
 
