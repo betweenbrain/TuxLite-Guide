@@ -62,7 +62,7 @@ Once again, please consult the [TuxLite installation guide](http://tuxlite.com/i
 
 Server Hardening
 -------------------
-###fail2ban###
+###fail2ban
 
 `$ aptitude install fail2ban`
 
@@ -75,7 +75,7 @@ Configure fail2ban to whitelist your IP address and to send you ban notification
 - ignoreip = 127.0.0.1 [yourIP]
 - action = %(action_mw)
 
-###[ConfigServer Security & Firewall](http://configserver.com/free/csf/install.txt)### 
+###[ConfigServer Security & Firewall](http://configserver.com/free/csf/install.txt)
 
 `$ wget http://www.configserver.com/free/csf.tgz`
 
