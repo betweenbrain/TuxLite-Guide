@@ -75,7 +75,7 @@ Configure fail2ban to whitelist your IP address and to send you ban notification
 - ignoreip = 127.0.0.1 [yourIP]
 - action = %(action_mw)
 
-###Configserver### [2](http://configserver.com/free/csf/install.txt)
+###[ConfigServer Security & Firewall](http://configserver.com/free/csf/install.txt)### 
 
 `$ wget http://www.configserver.com/free/csf.tgz`
 
