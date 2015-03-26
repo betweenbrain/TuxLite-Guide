@@ -89,6 +89,7 @@ Next, test whether you have the required iptables modules:
 
 `$ perl /usr/local/csf/bin/csftest.pl`
 
-### Install  apticron to Generate  a  mail  listing  packages  which are pending an upgrade
+### Install  apticron
+Generates email listing packages  which are pending an upgrade
 
 `$ sudo apt-get install apticron`
